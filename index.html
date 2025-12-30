@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXA STUDIO | Spoj kreativnosti i dizajna</title>
     <meta name="description" content="NEXA STUDIO - Agencija za dizajn logotipa, web sajtova, video editing i fotografiju.">
-    
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.css">
@@ -18,7 +17,7 @@
         <ul class="nav-links">
             <li><a href="#home">Početna</a></li>
             <li><a href="#services">Usluge</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">Galerija</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
@@ -26,7 +25,7 @@
     <header id="home" class="hero">
         <div class="hero-content">
             <h1>Mjesto gdje ideje postaju dizajn.</h1>
-            <p>Spoj kreativnosti, stila i savremenog dizajna.</p>
+            <p class="hero-text">Spoj kreativnosti, stila i savremenog dizajna.</p>
             <a href="#contact" class="cta-btn">Zatraži ponudu</a>
         </div>
     </header>
@@ -45,28 +44,38 @@
     </section>
 
     <section id="portfolio">
-        <h2 class="section-title">Portfolio</h2>
+        <h2 class="section-title">Galerija</h2>
         <div class="portfolio-grid">
-            <a data-fslightbox="gallery" href="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80">
-                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80" alt="Work">
+            <a data-fslightbox="gallery" href="slika1.jpg">
+                <img src="slika1.jpg" alt="Rad 1">
             </a>
-            <a data-fslightbox="gallery" href="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&w=800&q=80">
-                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&w=400&q=80" alt="Work">
+            <a data-fslightbox="gallery" href="slika2.jpg">
+                <img src="slika2.jpg" alt="Rad 2">
+            </a>
+            <a data-fslightbox="gallery" href="slika3.jpg">
+                <img src="slika3.jpg" alt="Rad 3">
             </a>
         </div>
-        <p class="insta-link">Pogledajte više na <a href="https://instagram.com/nexa_studio2" target="_blank">@nexa_studio2</a></p>
+        <p class="insta-link-centered">Pogledajte više na <a href="https://instagram.com/nexa_studio2" target="_blank">@nexa_studio2</a></p>
     </section>
 
     <section id="contact">
-        <div class="contact-container">
-            <h2>Kontaktirajte nas</h2>
-            <p>Cijene se formiraju individualno prema vašim potrebama.</p>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Vaše ime" required>
-                <input type="email" id="email" placeholder="Vaš Email" required>
-                <textarea id="message" placeholder="Vaša poruka" required></textarea>
-                <button type="submit">Pošalji poruku</button>
-            </form>
+        <h2 class="section-title">Kontaktirajte nas</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +387 65 959 096</p>
+                <p><i class="fas fa-envelope"></i> balkaneditlogoless@gmail.com</p>
+                <p><i class="fab fa-instagram"></i> @nexa_studio2</p>
+            </div>
+            <div class="contact-form-side">
+                <p class="form-desc">Cijene se formiraju individualno prema vašim potrebama.</p>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Vaše ime" required>
+                    <input type="email" id="email" placeholder="Vaš Email" required>
+                    <textarea id="message" placeholder="Vaša poruka" required></textarea>
+                    <button type="submit">Pošalji poruku</button>
+                </form>
+            </div>
         </div>
     </section>
 
